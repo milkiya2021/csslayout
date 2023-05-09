@@ -1,0 +1,179 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  grid-template-rows: 250px repeat(3, 120px);
+  gap: 3px;
+  background-color: black;
+  border: 3px solid black;
+}
+
+.firstBox {
+  grid-column: 1/2;
+  grid-row: 1/5;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 70px 1fr 40px repeat(2, 50px) 30px;
+  grid-gap: 3px;
+}
+
+.firstTextBox {
+  padding: 0px 10px;
+}
+
+.firstTextBoxLine {
+  border-top: 1px solid black;
+}
+
+.table {
+  border-bottom: 1px solid black;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+.table:nth-child(1) {
+  background-color: rgb(235, 234, 234);
+}
+
+.location {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.smallFont {
+  font-size: 10px;
+}
+
+.secondBoxUp {
+  grid-column: 2/3;
+  grid-row: 1/4;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 100px 70px 1fr;
+}
+
+.secondTextBox {
+  padding: 0px 10px;
+}
+
+.secondTitleText {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.secondBoxDown {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: white;
+  padding: 5px 10px;
+}
+
+.secondDownText {
+  font-size: 20px;
+  padding-top: 40px;
+  line-height: 25px;
+}
+
+.thirdBox {
+  grid-column: 3/4;
+  grid-row: 1/4;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.forthBox1 {
+  grid-column: 4/5;
+  grid-row: 1;
+  background-color: white;
+}
+
+.forthBox2 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.imgBox1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-right: 2px solid black;
+}
+
+.imgBox2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-bottom: 2px solid black;
+}
+
+.imgBox3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.forthBox3 {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-auto-rows: 1fr;
+}
+
+.imgBox4 {
+  grid-column: 1;
+  border-right: 2px solid black;
+}
+
+.imgBox5 {
+  grid-column: 2;
+}
+
+.bottomBox {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.bottomBox1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-right: 2px solid black;
+}
+
+.bottomBox2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-bottom: 2px solid black;
+}
+
+.bottomBox3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.bottomBox4 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+  border-left: 2px solid black;
+}
